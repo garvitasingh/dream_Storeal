@@ -42,7 +42,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   gradient: LinearGradient(
                 colors: [
                   Colors.transparent,
-                  Color.fromARGB(255, 39, 39, 39).withOpacity(0.6),
+                  const Color.fromARGB(255, 39, 39, 39).withOpacity(0.6),
                   Colors.black.withOpacity(0.7),
                   Colors.black.withOpacity(0.9),
                 ],
@@ -58,15 +58,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 45,
                   ),
                   Container(
                     alignment: Alignment.topRight,
-                    margin: EdgeInsets.only(right: 25),
+                    margin: const EdgeInsets.only(right: 25),
                     child: SizedBox(
                       height: 32,
-                      width: 60,
+                      width: 70,
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.white,
@@ -87,7 +87,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           )),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 70,
                   ),
                   Column(
@@ -96,7 +96,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     children: [
                       Container(
                         alignment: Alignment.bottomLeft,
-                        margin: EdgeInsets.only(bottom: 15, left: 30),
+                        margin: const EdgeInsets.only(bottom: 15, left: 30),
                         child: Text(
                           'Welcome to',
                           style: GoogleFonts.roboto(
@@ -107,7 +107,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       ),
                       Container(
                         alignment: Alignment.bottomLeft,
-                        margin: EdgeInsets.only(bottom: 10, left: 30),
+                        margin: const EdgeInsets.only(bottom: 10, left: 30),
                         child: Text(
                           'DreamStoreal',
                           style: GoogleFonts.roboto(
@@ -118,7 +118,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       ),
                       Container(
                         alignment: Alignment.centerLeft,
-                        margin: EdgeInsets.only(bottom: 5, left: 30),
+                        margin: const EdgeInsets.only(bottom: 5, left: 30),
                         child: Text(
                           'Shop for artworks at minimum cost',
                           style: GoogleFonts.roboto(
@@ -130,7 +130,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       Container(
                         alignment: Alignment.centerLeft,
                         child: Padding(
-                          padding: EdgeInsets.only(left: 30),
+                          padding: const EdgeInsets.only(left: 30),
                           child: Text(
                             'and order personalised works',
                             style: GoogleFonts.roboto(
@@ -142,13 +142,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 80,
                   ),
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Expanded(
+                        const Expanded(
                             child: Divider(
                           thickness: 0.5,
                           color: Colors.white,
@@ -162,7 +162,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                             fontSize: 15,
                           ),
                         ),
-                        Expanded(
+                        const Expanded(
                             child: Divider(
                           thickness: 0.5,
                           color: Colors.white,
@@ -170,7 +170,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           endIndent: 44,
                         )),
                       ]),
-                  SizedBox(
+                  const SizedBox(
                     height: 23,
                   ),
                   Column(
@@ -178,7 +178,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        margin: EdgeInsets.only(right: 20, left: 20, bottom: 10),
+                        margin: const EdgeInsets.only(right: 20, left: 20, bottom: 10),
                         child: TextField(
                           decoration: InputDecoration(
                               filled: true,
@@ -186,7 +186,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(20),
                                 borderSide:
-                                    BorderSide(color: Colors.black, width: 1),
+                                    const BorderSide(color: Colors.black, width: 1),
                               ),
                               hintText: "Email"
                               // border: BorderSide(color: Colors.black,width: 1),
@@ -197,7 +197,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(right: 20, left: 20, bottom: 5),
+                        margin: const EdgeInsets.only(right: 20, left: 20, bottom: 5),
                         child: TextField(
                           decoration: InputDecoration(
                               filled: true,
@@ -205,7 +205,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(20),
                                 borderSide:
-                                    BorderSide(color: Colors.black, width: 1),
+                                    const BorderSide(color: Colors.black, width: 1),
                               ),
                               hintText: "Password"
                               // border: BorderSide(color: Colors.black,width: 1),
@@ -231,14 +231,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       ),
                       Center(
                         child: Container(
-                          margin: EdgeInsets.only(right: 120, left: 120),
+                          margin: const EdgeInsets.only(right: 120, left: 120),
                           child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                   backgroundColor: buttonColor.withOpacity(0.3),
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(30)),
                                   side:
-                                      BorderSide(color: Colors.white, width: 1)),
+                                      const BorderSide(color: Colors.white, width: 1)),
                               onPressed: () {},
                               child: Container(
                                 alignment: Alignment.center,
@@ -255,7 +255,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Row(
@@ -282,7 +282,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           ))
                     ],
                   ),
-                  Divider(
+                  const Divider(
                     color: Colors.white,
                     indent: 120,
                     endIndent: 120,
